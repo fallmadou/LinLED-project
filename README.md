@@ -1,40 +1,127 @@
-# Stage M2 ou Ingénieur : IA embarquée et apprentissage sur des données capteurs
+# 🤖 Stage M2 / Ingénieur – IA embarquée & reconnaissance gestuelle (Projet LinLED)
 
-## Contexte
-L'intelligence artificielle (IA) pour la classification de données statiques a connu un essor considérable ces dernières décennies. Cependant, l'utilisation des techniques de classification en temps réel de données temporelles en provenance de capteurs ouvre un champ prometteur relativement peu exploré. La multiplication de l'Internet des objets (IoT) dans notre vie quotidienne entraîne un intérêt croissant pour faire tourner l'IA à la périphérie, au niveau du capteur, évitant ainsi de transférer et de stocker des données sensibles.
+Ce dépôt contient le travail réalisé dans le cadre d’un stage de Master 2 ou ingénieur, consacré à l’intégration d’un modèle d’IA sur microcontrôleur pour la reconnaissance de gestes sans contact à l’aide du capteur **LinLED**.
 
-Le projet LinLED (https://linled.univ-amu.fr) est une technologie optique dopée à l'IA qui permet de reconnaître les gestes d'une personne en analysant la réponse temporelle du capteur. La dynamique gestuelle variant d'une personne à l'autre, le réseau de neurones doit s'adapter à chaque nouvel utilisateur.
+## 🌐 Présentation du projet LinLED
 
-## Objectifs du Stage
-Le sujet de stage se décline en deux volets :
+[LinLED](https://linled.univ-amu.fr) est une interface de détection gestuelle **optique et sans contact**, capable de localiser un doigt ou une main avec une **résolution de 1 mm** et une **latence de 1 ms**.
 
-1. Volet méthodologique : Étudier différents outils logiciels et matériels existants comme TensorFlow Lite permettant de déployer des algorithmes de machine learning ou d'apprentissage statistique sur systèmes embarqués.
-2. Volet applicatif : Valider expérimentalement la méthodologie sur LinLED. Mettre au point un algorithme d'IA de reconnaissance de gestes par apprentissage sur la base de données LinLED existante et déployer ensuite l'algorithme sur microcontrôleur pour une reconnaissance gestuelle en temps réel à la périphérie.
+La reconnaissance repose sur :
+- Une **matrice linéaire** de LED/photodiodes infrarouges
+- Une **analyse analogique rapide**
+- Une **IA légère embarquée** qui s'adapte aux gestes des utilisateurs
 
-## Technologies Utilisées
-- Langages de programmation : C, C++, Python, Matlab
-- Bibliothèques et frameworks : TensorFlow, Keras
-- Matériel : Microcontrôleurs, capteurs Infrarouge
+🔗 Plus d'infos dans [l'article ICMI’23](docs/icmi23companion-56.pdf)
 
-## Prérequis
-- Connaissances en informatique et traitement du signal
-- Expérience en apprentissage statistique (Machine Learning, Deep Learning)
-- Compétences en mathématiques appliquées
-- Expérience avec les systèmes embarqués et temps réel
+---
 
-- Durée : 6 mois
+## 🎯 Objectifs du stage
 
-## Lieu du Stage
-Openlab Stellantis ; Équipe Systèmes Bio-inspirés de l'Institut des Sciences du Mouvement, Campus de Luminy à Marseille. Au cœur du Parc National des Calanques.
+- Développer une chaîne complète de traitement :
+  1. **Acquisition temps réel** de signaux multicanaux
+  2. **Étiquetage** via clavier
+  3. **Entraînement IA** (Keras/TensorFlow)
+  4. **Déploiement embarqué** (Teensy 4.1)
+- Reconnaître des gestes comme :
+  - Swipe gauche/droite
+  - Click
+  - Still/InOut/Neutral
 
-## Documentation et Ressources
-- [Site web du projet LinLED](https://linled.univ-amu.fr)
-- [Documentation sur TensorFlow Lite](https://www.tensorflow.org/lite)
-- [Documentation sur Keras](https://keras.io)
-- [Documentation sur Microcontrôleurs](https://www.pjrc.com/store/teensy41.html)
+---
 
-## Contact
-Pour toute question supplémentaire, n'hésitez pas à contacter :
-- Dominique Martinez : dominique.martinez@univ-amu.fr
-- Stéphane Viollet : stephane.viollet@univ-amu.fr
-- Jocelyn Monnoyer : jocelyn.monnoyer@stellantis.com
+## 🔌 Code Arduino (Teensy 4.1)
+
+Le fichier `acqui.ino` lit **18 entrées analogiques** et envoie les données via port série.
+
+### ⚙️ Spécifications
+
+- Carte : Teensy 4.1 (600 MHz)
+- Canaux : A0 → A17
+- Résolution : 10 bits
+- Échantillonnage : 200 Hz
+- Interface : USB série (250000 bauds)
+
+### 📋 Installation
+
+1. Brancher correctement le capteur LinLED et le Teensy
+2. Flasher `acqui.ino` via Arduino IDE
+3. Vérifier que le **port COM** est celui attendu par MATLAB
+
+---
+
+## 🧪 Script MATLAB (`acqu.mat`)
+
+Ce script assure :
+- L'acquisition **temps réel** des signaux
+- L’affichage en live du canal A17 (Sn)
+- L’**étiquetage au clavier**
+- L’**enregistrement automatique** dans des fichiers `.txt`
+
+### ⌨️ Raccourcis clavier
+
+| Touche | Label affecté  |
+|--------|----------------|
+| `N`    | Neutral         |
+| `E`    | InOut           |
+| `S`    | Still           |
+| `G`    | SwipeLeft       |
+| `D`    | SwipeRight      |
+| `C`    | Click           |
+| `A`    | Pause/Relance enregistrement |
+
+> Le label est forcé en `Neutral` si les canaux 17 et 18 sont dans la zone de bruit.
+
+---
+
+## 🧠 Apprentissage automatique & IA embarquée
+
+Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
+- 📚 Données labellisées → traitement Python
+- 🧠 Modèle Keras simple (ex: LSTM ou dense)
+- 🪄 Conversion en **TensorFlow Lite**
+- 🚀 Intégration sur Teensy via projet Arduino
+
+### 🔧 Outils utilisés
+
+- [TensorFlow Lite](https://www.tensorflow.org/lite)
+- [Keras](https://keras.io/)
+- Python 3.x
+
+---
+
+## 📚 Documentation technique
+
+- 📘 [Manuel LinLED – Prototype](docs/LinLED_Prototype_Manual.pdf)
+- 🧾 [Fiche de stage M2 – PDF](docs/stage_ML_M2_2025.pdf)
+- 📰 [Article scientifique ICMI’23](docs/icmi23companion-56.pdf)
+- 🌍 [Site Web officiel](https://linled.univ-amu.fr)
+
+---
+
+## 👨‍🏫 Encadrants & contacts
+
+- **Pr. Stéphane Viollet** – stephane.viollet@univ-amu.fr  
+- **Pr. Dominique Martinez** – dominique.martinez@univ-amu.fr  
+- **Jocelyn Monnoyer (Stellantis)** – jocelyn.monnoyer@stellantis.com  
+- **Martin Chauvet (ISM / SATT SE)** – martin.chauvet@orange.fr  
+
+---
+
+## ⚠️ Remarques importantes
+
+- Ne jamais alimenter le Teensy via les **ports USB de sortie** du bloc d'alim LinLED.
+- Calibrer les seuils de détection dans le firmware si l'environnement change (lumière ambiante, main, plexi…).
+- Le capteur est sensible à la réflectivité : adapter la position de la main (axe Z).
+
+---
+
+## ✅ Prochaines étapes
+
+- Finalisation du modèle IA entraîné
+- Intégration temps réel sur Teensy (avec `Snorm`)
+- Interface utilisateur (affichage LED ou retour souris/clavier)
+- Amélioration du pipeline IA (filtrage, prétraitement…)
+
+---
+
+Merci d’avoir consulté ce projet !
