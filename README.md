@@ -106,13 +106,7 @@ Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
 - **Pr. Stéphane Viollet** – stephane.viollet@univ-amu.fr  
 - **Pr. Dominique Martinez** – dominique.martinez@univ-amu.fr  
 - **Jocelyn Monnoyer (Stellantis)** – jocelyn.monnoyer@stellantis.com  
-- **Martin Chauvet (ISM / SATT SE)** – martin.chauvet@orange.fr  
-
----
-
-## Remarques importantes
-
-- Ne jamais alimenter le Teensy via les **ports USB de sortie** du bloc d'alim LinLED.
+- **Martin Chauvet (ISM / SATT SE)** – martin.chauvet@orange.fr
 
 ---
 
