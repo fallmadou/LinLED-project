@@ -71,7 +71,7 @@ Le script [acquisition_via_matlab.m](Algorithm/acquisition_via_matlab.m) assure 
 
 > Le label est forcé en `Neutral` si les canaux 17 et 18 sont dans la zone de bruit.
 
-## Visualisation
+### Visualisation
 
 On peut visualisée les donnée avec le scripte [visual_acquisition](Algorithm/visual_acquisition.m)
 
