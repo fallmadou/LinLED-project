@@ -31,7 +31,7 @@ Plus d'infos dans : [l'article ICMI’23](Docs/icmi23companion-56.pdf)
 
 ## Code Arduino (Teensy 4.1)
 
-Le fichier `acqui.ino` lit **18 entrées analogiques** et envoie les données via port série.
+Le fichier [acquisition_via_arduino.ino](Algorithm/acquisition_via_arduino.ino) lit **18 entrées analogiques** et envoie les données via port série.
 
 ### Spécifications
 
@@ -93,9 +93,9 @@ Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
 
 ## Documentation technique
 
-- [Manuel LinLED – Prototype](LinLED_Prototype_Manual_2024-08-26.pdf)
-- [Fiche de stage M2 – PDF](stage_ML_M2_2025.pdf)
-- [Article scientifique ICMI’23](icmi23companion-56.pdf)
+- [Manuel LinLED – Prototype](Docs/LinLED_Prototype_Manual_2024-08-26.pdf)
+- [Fiche de stage M2 – PDF](Docs/stage_ML_M2_2025.pdf)
+- [Article scientifique ICMI’23](Docs/icmi23companion-56.pdf)
 - [Site Web officiel](https://linled.univ-amu.fr)
 - [Teensy 4.1](https://www.pjrc.com/store/teensy41.html)
 
