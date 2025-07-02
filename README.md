@@ -1,8 +1,8 @@
-# 🤖 Stage M2 / Ingénieur – IA embarquée & reconnaissance gestuelle (Projet LinLED)
+# Stage M2 / Ingénieur – IA embarquée & reconnaissance gestuelle (Projet LinLED)
 
 Ce dépôt contient le travail réalisé dans le cadre d’un stage de Master 2 ou ingénieur, consacré à l’intégration d’un modèle d’IA sur microcontrôleur pour la reconnaissance de gestes sans contact à l’aide du capteur **LinLED**.
 
-## 🌐 Présentation du projet LinLED
+## Présentation du projet LinLED
 
 [LinLED](https://linled.univ-amu.fr) est une interface de détection gestuelle **optique et sans contact**, capable de localiser un doigt ou une main avec une **résolution de 1 mm** et une **latence de 1 ms**.
 
@@ -15,7 +15,7 @@ La reconnaissance repose sur :
 
 ---
 
-## 🎯 Objectifs du stage
+## Objectifs du stage
 
 - Développer une chaîne complète de traitement :
   1. **Acquisition temps réel** de signaux multicanaux
@@ -29,7 +29,7 @@ La reconnaissance repose sur :
 
 ---
 
-## 🔌 Code Arduino (Teensy 4.1)
+## Code Arduino (Teensy 4.1)
 
 Le fichier `acqui.ino` lit **18 entrées analogiques** et envoie les données via port série.
 
@@ -41,7 +41,7 @@ Le fichier `acqui.ino` lit **18 entrées analogiques** et envoie les données vi
 - Échantillonnage : 200 Hz
 - Interface : USB série (250000 bauds)
 
-### 📋 Installation
+### Installation
 
 1. Brancher correctement le capteur LinLED et le Teensy
 2. Flasher `acqui.ino` via Arduino IDE
@@ -49,7 +49,7 @@ Le fichier `acqui.ino` lit **18 entrées analogiques** et envoie les données vi
 
 ---
 
-## 🧪 Script MATLAB (`acqu.mat`)
+## Script MATLAB (`acqu.mat`)
 
 Ce script assure :
 - L'acquisition **temps réel** des signaux
@@ -73,15 +73,15 @@ Ce script assure :
 
 ---
 
-## 🧠 Apprentissage automatique & IA embarquée
+## Apprentissage automatique & IA embarquée
 
 Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
-- 📚 Données labellisées → traitement Python
-- 🧠 Modèle Keras simple (ex: LSTM ou dense)
-- 🪄 Conversion en **TensorFlow Lite**
-- 🚀 Intégration sur Teensy via projet Arduino
+- Données labellisées → traitement Python
+- Modèle Keras simple (ex: LSTM ou dense)
+- Conversion en **TensorFlow Lite**
+- Intégration sur Teensy via projet Arduino
 
-### 🔧 Outils utilisés
+### Outils utilisés
 
 - [TensorFlow Lite](https://www.tensorflow.org/lite)
 - [Keras](https://keras.io/)
@@ -91,16 +91,17 @@ Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
 
 ---
 
-## 📚 Documentation technique
+## Documentation technique
 
-- 📘 [Manuel LinLED – Prototype](LinLED_Prototype_Manual.pdf)
-- 🧾 [Fiche de stage M2 – PDF](stage_ML_M2_2025.pdf)
-- 📰 [Article scientifique ICMI’23](icmi23companion-56.pdf)
-- 🌍 [Site Web officiel](https://linled.univ-amu.fr)
+- [Manuel LinLED – Prototype](LinLED_Prototype_Manual.pdf)
+- [Fiche de stage M2 – PDF](stage_ML_M2_2025.pdf)
+- [Article scientifique ICMI’23](icmi23companion-56.pdf)
+- [Site Web officiel](https://linled.univ-amu.fr)
+- [Teensy 4.1](https://www.pjrc.com/store/teensy41.html)
 
 ---
 
-## 👨‍🏫 Encadrants & contacts
+## Encadrants & contacts
 
 - **Pr. Stéphane Viollet** – stephane.viollet@univ-amu.fr  
 - **Pr. Dominique Martinez** – dominique.martinez@univ-amu.fr  
@@ -109,15 +110,13 @@ Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
 
 ---
 
-## ⚠️ Remarques importantes
+## Remarques importantes
 
 - Ne jamais alimenter le Teensy via les **ports USB de sortie** du bloc d'alim LinLED.
-- Calibrer les seuils de détection dans le firmware si l'environnement change (lumière ambiante, main, plexi…).
-- Le capteur est sensible à la réflectivité : adapter la position de la main (axe Z).
 
 ---
 
-## ✅ Prochaines étapes
+## Prochaines étapes
 
 - Finalisation du modèle IA entraîné
 - Intégration temps réel sur Teensy (avec `Snorm`)
