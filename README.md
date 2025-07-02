@@ -93,7 +93,7 @@ Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
 
 ## Documentation technique
 
-- [Manuel LinLED – Prototype](LinLED_Prototype_Manual.pdf)
+- [Manuel LinLED – Prototype](LinLED_Prototype_Manual_2024-08-26.pdf)
 - [Fiche de stage M2 – PDF](stage_ML_M2_2025.pdf)
 - [Article scientifique ICMI’23](icmi23companion-56.pdf)
 - [Site Web officiel](https://linled.univ-amu.fr)
