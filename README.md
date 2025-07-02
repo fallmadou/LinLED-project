@@ -11,7 +11,7 @@ La reconnaissance repose sur :
 - Une **analyse analogique rapide**
 - Une **IA légère embarquée** qui s'adapte aux gestes des utilisateurs
 
-🔗 Plus d'infos dans [l'article ICMI’23](docs/icmi23companion-56.pdf)
+🔗 Plus d'infos dans : [l'article ICMI’23](icmi23companion-56.pdf)
 
 ---
 
@@ -86,14 +86,16 @@ Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
 - [TensorFlow Lite](https://www.tensorflow.org/lite)
 - [Keras](https://keras.io/)
 - Python 3.x
+- Matlab
+- Arduino
 
 ---
 
 ## 📚 Documentation technique
 
-- 📘 [Manuel LinLED – Prototype](docs/LinLED_Prototype_Manual.pdf)
-- 🧾 [Fiche de stage M2 – PDF](docs/stage_ML_M2_2025.pdf)
-- 📰 [Article scientifique ICMI’23](docs/icmi23companion-56.pdf)
+- 📘 [Manuel LinLED – Prototype](LinLED_Prototype_Manual.pdf)
+- 🧾 [Fiche de stage M2 – PDF](stage_ML_M2_2025.pdf)
+- 📰 [Article scientifique ICMI’23](icmi23companion-56.pdf)
 - 🌍 [Site Web officiel](https://linled.univ-amu.fr)
 
 ---
