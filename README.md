@@ -11,7 +11,7 @@ La reconnaissance repose sur :
 - Une **analyse analogique rapide**
 - Une **IA légère embarquée** qui s'adapte aux gestes des utilisateurs
 
-🔗 Plus d'infos dans : [l'article ICMI’23](icmi23companion-56.pdf)
+Plus d'infos dans : [l'article ICMI’23](Docs/icmi23companion-56.pdf)
 
 ---
 
@@ -33,7 +33,7 @@ La reconnaissance repose sur :
 
 Le fichier `acqui.ino` lit **18 entrées analogiques** et envoie les données via port série.
 
-### ⚙️ Spécifications
+### Spécifications
 
 - Carte : Teensy 4.1 (600 MHz)
 - Canaux : A0 → A17
@@ -44,7 +44,7 @@ Le fichier `acqui.ino` lit **18 entrées analogiques** et envoie les données vi
 ### Installation
 
 1. Brancher correctement le capteur LinLED et le Teensy
-2. Flasher `acqui.ino` via Arduino IDE
+2. Flasher (dsq) via Arduino IDE
 3. Vérifier que le **port COM** est celui attendu par MATLAB
 
 ---
