@@ -87,8 +87,6 @@ Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
 
 ### Outils utilisés
 
-- [TensorFlow Lite](https://www.tensorflow.org/lite)
-- [Keras](https://keras.io/)
 - Python 3.x
 - Matlab
 - Arduino
@@ -97,6 +95,7 @@ Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
 - [KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
 - [Low-Pass-Filter](https://fr.mathworks.com/discovery/low-pass-filter.html)
 - [Savitzky Golay Filter](https://www.weisang.com/en/support/know/flexpro-documentation/analyzing-data-mathematically/reference/fpscript-functions/filtering-and-smoothing/savitzkygolayfilter/)
+- [Moving Average Filter](https://fr.mathworks.com/help/signal/ug/signal-smoothing.html#SignalSmoothingExample-2)
 
 ---
 
