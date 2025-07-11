@@ -111,7 +111,7 @@ Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
 
 ## Operational Committee OpenLab Automotive Motion Lab
 
-- [Présentation](Docs/LinLED_Prototype_Manual_2024-08-26.pdf)
+- [Présentation](Docs/presentaton_LinLED_OpenLAB.pdf)
 
 
 ---
