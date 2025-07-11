@@ -92,6 +92,7 @@ Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
 - Python 3.x
 - Matlab
 - Arduino
+- [Random Forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
 
 ---
 
