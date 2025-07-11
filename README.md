@@ -92,7 +92,10 @@ Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
 - Python 3.x
 - Matlab
 - Arduino
-- [Random Forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+- [RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+- [HistGradientBoostingClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html)
+- [KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
+- [Low-Pass-Filter](https://fr.mathworks.com/discovery/low-pass-filter.html)
 
 ---
 
