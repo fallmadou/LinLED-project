@@ -7,7 +7,7 @@ Ce dépôt contient le travail réalisé dans le cadre d’un stage de Master 2 
 [LinLED](https://linled.univ-amu.fr) est une interface de détection gestuelle **optique et sans contact**, capable de localiser un doigt ou une main avec une **résolution de 1 mm** et une **latence de 1 ms**.
 
 La reconnaissance repose sur :
-- Une **matrice linéaire** de LED/photodiodes infrarouges
+- Une **réseaux linéaire** de LED/photodiodes infrarouges
 - Une **analyse analogique rapide**
 - Une **IA légère embarquée** qui s'adapte aux gestes des utilisateurs
 
@@ -102,6 +102,12 @@ Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
 - [Article scientifique ICMI’23](Docs/icmi23companion-56.pdf)
 - [Site Web officiel](https://linled.univ-amu.fr)
 - [Teensy 4.1](https://www.pjrc.com/store/teensy41.html)
+
+---
+
+## Operational Committee OpenLab Automotive Motion Lab
+
+- [Présentation](Docs/LinLED_Prototype_Manual_2024-08-26.pdf)
 
 ---
 
