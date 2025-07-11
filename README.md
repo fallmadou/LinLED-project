@@ -96,7 +96,7 @@ Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
 - [HistGradientBoostingClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html)
 - [KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
 - [Low-Pass-Filter](https://fr.mathworks.com/discovery/low-pass-filter.html)
-- [savitzkygolayfilter](https://www.weisang.com/en/support/know/flexpro-documentation/analyzing-data-mathematically/reference/fpscript-functions/filtering-and-smoothing/savitzkygolayfilter/)
+- [Savitzky Golay Filter](https://www.weisang.com/en/support/know/flexpro-documentation/analyzing-data-mathematically/reference/fpscript-functions/filtering-and-smoothing/savitzkygolayfilter/)
 
 ---
 
