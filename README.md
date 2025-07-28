@@ -1,6 +1,6 @@
 # Stage M2 / Ingénieur – IA embarquée & reconnaissance gestuelle (Projet LinLED)
 
-Ce dépôt contient le travail réalisé dans le cadre d’un stage de Master 2 ou ingénieur, consacré à l’intégration d’un modèle d’IA sur microcontrôleur pour la reconnaissance de gestes sans contact à l’aide du capteur **LinLED**.
+Ce dépôt contient le travail réalisé dans le cadre d’un stage de Master 2 ou ingénieur, consacré à l’intégration d’un modèle d’IA sur microcontrôleur pour la reconnaissance de gestes sans contact à l’aide **LinLED**.
 
 ## Présentation du projet LinLED
 
@@ -17,15 +17,15 @@ Plus d'infos dans : [l'article ICMI’23](Docs/icmi23companion-56.pdf)
 
 ## Objectifs du stage
 
-- Développer une chaîne complète de traitement :
-  1. **Acquisition temps réel** de signaux multicanaux
-  2. **Étiquetage** via clavier
-  3. **Entraînement IA** (Keras/TensorFlow)
-  4. **Déploiement embarqué** (Teensy 4.1)
-- Reconnaître des gestes comme :
-  - Swipe gauche/droite
-  - Click
-  - Still/InOut/Neutral
+  - Construction d'une base de données :
+    1. **Acquisition en temps réel** de signaux
+    2. **Étiquetage** manuel via clavier
+  
+  - Apprentissage automatique :
+    **Entraînement** d’un modèle pour la reconnaissance de gestes
+
+  - Intégration sur microcontrôleur embarqué :
+    **Déploiement** sur Teensy 4.1
 
 ---
 
