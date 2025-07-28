@@ -77,14 +77,6 @@ On peut visualisée les donnée avec le scripte [visual_acquisition](Algorithm/v
 
 ---
 
-## Apprentissage automatique & IA embarquée
-
-Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
-- Données labellisées → traitement Python
-- Modèle Keras simple (ex: LSTM ou dense)
-- Conversion en **TensorFlow Lite**
-- Intégration sur Teensy via projet Arduino
-
 ### Outils utilisés
 
 - [Python](https://docs.python.org/3/)
@@ -134,7 +126,7 @@ Les fichiers `.txt` obtenus sont utilisés pour entraîner un modèle IA :
 ## Prochaines étapes
 
 - Finalisation du modèle IA entraîné
-- Intégration temps réel sur Teensy (avec `Snorm`)
+- Intégration temps réel sur Teensy 
 - Interface utilisateur (affichage LED ou retour souris/clavier)
 - Amélioration du pipeline IA (filtrage, prétraitement…)
 
