@@ -31,7 +31,7 @@ Plus d'infos dans : [l'article ICMI’23](Docs/icmi23companion-56.pdf)
 
 ## Code Arduino (Teensy 4.1)
 
-Le fichier [acquisition_via_arduino.ino](Algorithm/acquisition_via_arduino.ino) lit **18 entrées analogiques** et envoie les données via port série.
+Le fichier [acquisition_via_arduino.ino](Algorithm/acquisition_via_arduino.zip) lit **18 entrées analogiques** et envoie les données via port série.
 
 ### Spécifications
 
@@ -41,39 +41,19 @@ Le fichier [acquisition_via_arduino.ino](Algorithm/acquisition_via_arduino.ino) 
 - Échantillonnage : 200 Hz
 - Interface : USB série (250000 bauds)
 
-### Installation
-
-1. Brancher correctement le capteur LinLED et le Teensy
-2. Flasher (dsq) via Arduino IDE
-3. Vérifier que le **port COM** est celui attendu par MATLAB
-
 ---
 
 ## Script MATLAB 
 
-Le script [acquisition_via_matlab.m](Algorithm/acquisition_via_matlab.m) assure :
+Le script [acquisition_via_matlab.m](Algorithm/acquisition_via_matlab.zip) assure :
 - L'acquisition **temps réel** des signaux
 - L’affichage en live du canal A17 (Sn)
 - L’**étiquetage au clavier**
 - L’**enregistrement automatique** dans des fichiers `.txt`
 
-### Raccourcis clavier
-
-| Touche | Label affecté  |
-|--------|----------------|
-| `N`    | Neutral         |
-| `E`    | InOut           |
-| `S`    | Still           |
-| `G`    | SwipeLeft       |
-| `D`    | SwipeRight      |
-| `C`    | Click           |
-| `A`    | Pause/Relance enregistrement |
-
-> Le label est forcé en `Neutral` si les canaux 17 et 18 sont dans la zone de bruit.
-
 ### Visualisation
 
-On peut visualisée les donnée avec le scripte [visual_acquisition](Algorithm/visual_acquisition.m)
+On peut visualisée les donnée avec le scripte [visual_acquisition](Algorithm/visual_acquisition.zip)
 
 ---
 
