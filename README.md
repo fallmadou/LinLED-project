@@ -31,7 +31,7 @@ Plus d'infos dans : [l'article ICMI’23](Docs/icmi23companion-56.pdf)
 
 ## Code Arduino (Teensy 4.1)
 
-Le fichier [acquisition_via_arduino.ino](Algorithm/acquisition_via_arduino.zip) lit **18 entrées analogiques** et envoie les données via port série.
+Le fichier [acquisition_via_arduino.zip](Algorithm) lit **18 entrées analogiques** et envoie les données via port série.
 
 ### Spécifications
 
@@ -45,7 +45,7 @@ Le fichier [acquisition_via_arduino.ino](Algorithm/acquisition_via_arduino.zip) 
 
 ## Script MATLAB 
 
-Le script [acquisition_via_matlab.m](Algorithm/acquisition_via_matlab.zip) assure :
+Le script [acquisition_via_matlab.zip](Algorithm) assure :
 - L'acquisition **temps réel** des signaux
 - L’affichage en live du canal A17 (Sn)
 - L’**étiquetage au clavier**
