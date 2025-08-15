@@ -55,6 +55,24 @@ Le script [acquisition_via_matlab.zip](Algorithm) assure :
 
 On peut visualisée les donnée avec le scripte [visual_acquisition.zip](Algorithm)
 
+
+---
+## Script Python
+
+Les scripts Python permettent d’entraîner et d’évaluer différents modèles de classification pour la reconnaissance gestuelle LinLED.  
+Chaque modèle dispose d’un script ou d’une commande dédiée :
+
+- **KNN** : `python scripts/train.py --model KNN` – K-Nearest Neighbors  
+- **RF** : `python scripts/train.py --model RF` – Random Forest  
+- **HGB** : `python scripts/train.py --model HGB` – HistGradientBoosting  
+- **MLP** : `python scripts/export_teensy.py` – Multi-Layer Perceptron
+
+### Fonctionnalités
+- Chargement des données `.txt` acquises via MATLAB
+- Prétraitement : filtrage passe-bas ou Savitzky–Golay, normalisation par canal
+- Entraînement et validation croisée
+- Évaluation : `accuracy`, `f1-score`, matrice de confusion
+
 ---
 
 ### Outils utilisés
