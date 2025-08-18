@@ -70,10 +70,10 @@ Chaque modèle possède un script ou une commande dédiée :
 ### Fonctionnalités
 
 * **Chargement des données** : lecture de fichiers `.txt` générés sous MATLAB.
-* **Prétraitement** : filtrage (passe-bas, Savitzky–Golay ou exponentiel EMA) et nettoyage des canaux.
+* **Prétraitement** : filtrage et nettoyage des canaux.
 * **Segmentation** : découpage des gestes en séquences exploitables.
 * **Extraction de caractéristiques** : calcul de statistiques simples (moyenne, écart-type, min, max) sur chaque canal.
-* **Entraînement** : modèle `Classifier` avec validation croisée et recherche d’hyperparamètres.
+* **Entraînement** avec validation croisée et recherche d’hyperparamètres.
 * **Évaluation** : précision (`accuracy`), rapport de classification (`f1-score`, rappel, précision), matrice de confusion normalisée, analyse des erreurs.
 * **Sauvegarde du modèle**.
 
