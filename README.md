@@ -66,11 +66,17 @@ Chaque modèle possède un script ou une commande dédiée :
 - **RF** : [Random Forest](Algorithm/RandomForest.py) 
 - **HGB** : [Histogram Gradient Boosting](Algorithm/HistGradientBoosting.py)
 
+
 ### Fonctionnalités
-- Chargement des données `.txt` acquises via MATLAB
-- Prétraitement : filtrage passe-bas ou Savitzky–Golay, normalisation par canal
-- Entraînement et validation croisée
-- Évaluation : `accuracy`, `f1-score`, matrice de confusion
+
+* **Chargement des données** : lecture de fichiers `.txt` générés sous MATLAB.
+* **Prétraitement** : filtrage (passe-bas, Savitzky–Golay ou exponentiel EMA) et nettoyage des canaux.
+* **Segmentation** : découpage des gestes en séquences exploitables.
+* **Extraction de caractéristiques** : calcul de statistiques simples (moyenne, écart-type, min, max) sur chaque canal.
+* **Entraînement** : modèle `Classifier` avec validation croisée et recherche d’hyperparamètres.
+* **Évaluation** : précision (`accuracy`), rapport de classification (`f1-score`, rappel, précision), matrice de confusion normalisée, analyse des erreurs.
+* **Sauvegarde du modèle**.
+
 
 ---
 
