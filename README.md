@@ -64,7 +64,7 @@ Chaque modèle possède un script ou une commande dédiée :
 
 - **KNN** : [K-Nearest Neighbors](Algorithm/K-NearestNeighbors.py)
 - **RF** : [Random Forest](Algorithm/RandomForest.py) 
-- **HGB** : [Histogram Gradient Boosting](Algorithm/HistGradientBoost.py)
+- **HGB** : [Histogram Gradient Boosting](Algorithm/HistGradientBoosting.py)
 
 ### Fonctionnalités
 - Chargement des données `.txt` acquises via MATLAB
