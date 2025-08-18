@@ -45,7 +45,7 @@ Le fichier [acquisition_via_arduino.zip](Algorithm) lit **18 entrées analogique
 
 ## Script MATLAB 
 
-Le script [acquisition_via_matlab.zip](Algorithm) assure :
+Le script [acquisition_via_matlab.m](Algorithm/acquisition_via_matlab.m) assure :
 - L'acquisition **temps réel** des signaux
 - L’affichage en live du canal A17 (Sn)
 - L’**étiquetage au clavier**
