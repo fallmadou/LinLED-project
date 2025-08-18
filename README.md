@@ -53,7 +53,7 @@ Le script [acquisition_via_matlab.m](Algorithm/acquisition_via_matlab.m) assure 
 
 ### Visualisation
 
-On peut visualisée les donnée avec le scripte [visual_acquisition.zip](Algorithm)
+On peut visualisée les donnée avec le scripte [visual_acquisition.m](Algorithm/visual_acquisition.m)
 
 
 ---
