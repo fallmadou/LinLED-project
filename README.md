@@ -129,10 +129,10 @@ Chaque modèle possède un script ou une commande dédiée :
 ## Prochaines étapes
 
 - Finalisation du modèle IA entraîné
-- Intégration temps réel sur Teensy 
-- Interface utilisateur (affichage LED ou retour souris/clavier)
-- Amélioration du pipeline IA (filtrage, prétraitement…)
+- Intégration syteme embarqué temps réel sur Teensy 
+- Utilisé un'interface pour avoir une milleur precision
+- Acquisition en condition reel
 
 ---
 
-Merci d’avoir consulté ce projet !
+Merci d’avoir consulté !
