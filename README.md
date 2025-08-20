@@ -128,10 +128,11 @@ Chaque modèle possède un script ou une commande dédiée :
 
 ## Prochaines étapes
 
-- Finalisation du modèle IA entraîné
-- Intégration syteme embarqué temps réel sur Teensy 
-- Utilisé un'interface pour avoir une milleur precision
-- Acquisition en condition reel
+- Finaliser le modèle IA.
+- Intégrer le système temps réel sur Teensy.
+- Créer une interface pour améliorer la précision.
+- Acquérir des données réelles et élargir la base pour renforcer la robustesse.
+- Déployer sur microcontrôleur avec IHM intégrée et communication véhicule.
 
 ---
 
