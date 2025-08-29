@@ -112,7 +112,7 @@ Chaque modèle possède un script ou une commande dédiée :
 ---
 
 ## Document de Stage
-- [Rapport de stage](Docs/LinLED_Prototype_Manual_2024-08-26.pdf)
+- [Rapport de stage](Docs/Rapport_stage_M2_TSI_projet_LinLED.pdf)
 - [Soutenance](Docs/LinLED_Prototype_Manual_2024-08-26.pdf)
 
 ---
