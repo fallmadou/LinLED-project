@@ -128,10 +128,8 @@ Chaque modèle possède un script ou une commande dédiée :
 
 ## Prochaines étapes
 
-- Finaliser le modèle IA.
+- Elargir la base pour renforcer la robustesse.
 - Intégrer le système temps réel sur Teensy.
-- Créer une interface pour améliorer la précision.
-- Acquérir des données réelles et élargir la base pour renforcer la robustesse.
 - Déployer sur microcontrôleur avec IHM intégrée et communication véhicule.
 
 ---
